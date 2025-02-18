@@ -13,7 +13,8 @@
 }
 
 html, body {
-    height: 100vh;
+    background-color: #38D3E3;
+    height: 100dvh;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
