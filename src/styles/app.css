@@ -651,6 +651,14 @@ video {
   top: 0.5rem;
 }
 
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -756,6 +764,10 @@ video {
   height: 4rem;
 }
 
+.h-\[315px\] {
+  height: 315px;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -784,6 +796,14 @@ video {
   width: 12rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
+.w-\[560px\] {
+  width: 560px;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -804,6 +824,10 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .resize {
@@ -852,6 +876,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .text-wrap {
@@ -956,6 +984,10 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.object-cover {
+  object-fit: cover;
 }
 
 .p-2 {
@@ -1127,6 +1159,10 @@ video {
   text-decoration-line: underline;
 }
 
+.opacity-80 {
+  opacity: 0.8;
+}
+
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1232,6 +1268,10 @@ input {
 
 input:focus {
   outline: none;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .focus\:outline-none:focus {

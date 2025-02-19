@@ -8,7 +8,7 @@ export default function LaunchingSoon() {
         <>
             <section
                 style={{ backgroundImage: `url(${require('../assets/images/bg-index-gradient.png')})` }}
-                className='bg-cover h-full w-full flex flex-col items-center justify-between'
+                className='bg-cover h-full w-full flex flex-col items-center justify-between relative'
             >
                 <div className='flex justify-center h-48'>
                     <img src={require('../assets/images/harambee.png')} alt="harambee icon" />
@@ -30,6 +30,17 @@ export default function LaunchingSoon() {
 
                 <div className='flex md:h-80'>
                     <img src={require('../assets/images/hand.png')} alt="harambee icon" />
+                </div>
+                <div className="absolute bottom-6 right-6 w-[90%] md:w-[480px] aspect-video rounded-3xl overflow-hidden">
+                    <iframe
+                        src="https://www.youtube.com/embed/HvPHBf_tXxI?si=i9JvAjWuipkcWODn"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                        className="w-full h-full"
+                    />
                 </div>
             </section>
 
