@@ -11,8 +11,7 @@ export default function LaunchingSoon() {
     return (
         <>
             <section
-                style={{ backgroundImage: `url(${require('../assets/images/bg-index-gradient.png')})` }}
-                className='bg-cover h-full w-full flex flex-col items-center justify-between relative'
+                className='bg-[url("../assets/images/bg-mobile.png")] sm:bg-[url("../assets/images/bg-index-gradient.png")] bg-cover h-full w-full flex flex-col items-center justify-between relative'
             >
                 <div className='flex justify-center h-[127px] w-[140px]'>
                     <img src={require('../assets/images/harambee.png')} alt="harambee icon" />
@@ -47,7 +46,7 @@ export default function LaunchingSoon() {
         ${showVideo ? 'block' : 'hidden'} md:block`}
                 >
                     <iframe
-                        src="https://www.youtube.com/embed/HvPHBf_tXxI?si=i9JvAjWuipkcWODn"
+                        src="https://www.youtube.com/embed/30ZGTlmbEtM?si=9Z0rQr5ppkZdhTYU"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
