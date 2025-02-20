@@ -29,8 +29,8 @@ function JoinCommunity({ isOpen, onClose }) {
                 <div className='w-full flex justify-center'>
                     <img src={require("../assets/images/hourglass.png")} className='h-20' alt='hour glass' />
                 </div>
-                <h2 className="text-xl font-bold py-4 text-white text-center">👋 JOIN THE COMMUNITY, BE THE FIRST TO KNOW!</h2>
-                <p className="text-sm text-white mb-8 text-center">
+                <h2 className="text-xl font-semibold py-4 text-white text-center">👋 JOIN THE COMMUNITY, BE THE FIRST TO KNOW!</h2>
+                <p className="text-sm text-white mb-8 text-center font-light">
                     We're building something amazing! Be among the first to experience personalized care services and support.
                     Sign up to secure your spot and get exclusive updates.
                 </p>
