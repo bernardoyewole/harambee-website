@@ -34,30 +34,29 @@ export default function LaunchingSoon() {
                 </div>
 
                 <div className='flex md:h-80'>
-                    <img src={require('../assets/images/hand.png')} alt="harambee icon" />
+                    <img
+                        src={require('../assets/images/hand.png')}
+                        alt="harambee icon"
+                        className="object-contain h-full w-auto"
+                    />
                 </div>
 
-                <AnimatePresence>
-                    {showVideo && (
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.9 }}
-                            transition={{ duration: 0.4, ease: "easeInOut" }}
-                            className="absolute bottom-[74px] right-4 w-[90%] md:w-[480px] aspect-video rounded-3xl overflow-hidden"
-                        >
-                            <iframe
-                                src="https://www.youtube.com/embed/HvPHBf_tXxI?si=i9JvAjWuipkcWODn"
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen
-                                className="w-full h-full"
-                            />
-                        </motion.div>
-                    )}
-                </AnimatePresence>
+
+                <div
+                    className={`absolute bottom-[74px] md:bottom-4 right-4 w-[90%] sm:w-[480px] aspect-video rounded-3xl overflow-hidden 
+        ${showVideo ? 'block' : 'hidden'} md:block`}
+                >
+                    <iframe
+                        src="https://www.youtube.com/embed/HvPHBf_tXxI?si=i9JvAjWuipkcWODn"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                        className="w-full h-full"
+                    />
+                </div>
+
 
                 <motion.button
                     whileTap={{ scale: 0.95 }}
